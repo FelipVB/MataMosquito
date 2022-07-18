@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>GAME</title>
+        <script src="game.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onresize="adjustGameStage()">
+        <div class="painel">
+
+            <div class="vidas">
+                <img id="v1" src="imagens/coracao_cheio.png">
+                <img id="v2" src="imagens/coracao_cheio.png">
+                <img id="v3" src="imagens/coracao_cheio.png">
+            </div>
+            
+            <div class="cronometro">
+                Tempo restante: <span id="time"></span>
+            </div>
+
+        </div>
+
+        <script>
+
+        document.getElementById('time').innerHTML = time
+        
+        var createFly = setInterval(function () {
+            randomPosition()
+        }, createFlyTime)
+        
+        </script>
+    </body>
+</html>
